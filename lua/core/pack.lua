@@ -62,7 +62,7 @@ function Lazy:load_lazy()
 	end
 	self:load_plugins()
 
-	local clone_prefix = use_ssh and "git@github.com:%s.git" or "https://github.com/%s.git"
+	local clone_prefix = "https://github.com/%s.git"
 	local lazy_settings = {
 		root = data_dir .. "lazy", -- directory where plugins will be installed
 		git = {
