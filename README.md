@@ -33,7 +33,7 @@ I use [lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins.
 
 ### 🎐 Features
 
-- **Fast.** Less than **30ms** to start (Depends on SSD and CPU, tested on Zephyrus G14 2022 version).
+- **Fast.** Less than **30ms** to start.
 - **Simple.** Run out of the box.
 - **Modern.** Pure `lua` config.
 - **Modular.** Easy to customize.
