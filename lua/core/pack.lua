@@ -57,7 +57,7 @@ end
 
 function Lazy:load_lazy()
 	if not vim.loop.fs_stat(lazy_path) then
-		local lazy_repo = use_ssh and "git@github.com:folke/lazy.nvim.git " or "https://github.com/folke/lazy.nvim.git "
+		local lazy_repo = "https://github.com/folke/lazy.nvim.git "
 		api.nvim_command("!git clone --filter=blob:none --branch=stable " .. lazy_repo .. lazy_path)
 	end
 	self:load_plugins()
