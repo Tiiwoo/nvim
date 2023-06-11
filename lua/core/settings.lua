@@ -88,6 +88,7 @@ settings["lsp_deps"] = {
 	"jsonls",
 	"lua_ls",
 	"pylsp",
+    "rust_analyzer"
 	-- "gopls",
 }
 
