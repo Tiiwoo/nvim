@@ -11,6 +11,9 @@ return {
 				unusedparams = true,
 				unusewrites = true,
 			},
+            hints = {
+                assignVariableTypes = true,
+            },
 		},
 	},
 }

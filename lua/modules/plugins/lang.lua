@@ -1,11 +1,11 @@
 local lang = {}
 
-lang["fatih/vim-go"] = {
-	lazy = true,
-	ft = "go",
-	build = ":GoInstallBinaries",
-	config = require("lang.vim-go"),
-}
+--lang["fatih/vim-go"] = {
+--	lazy = true,
+--	ft = "go",
+--	build = ":GoInstallBinaries",
+--	config = require("lang.vim-go"),
+--}
 lang["simrat39/rust-tools.nvim"] = {
 	lazy = true,
 	ft = "rust",
@@ -26,5 +26,18 @@ lang["iamcco/markdown-preview.nvim"] = {
 lang["chrisbra/csv.vim"] = {
 	lazy = true,
 	ft = "csv",
+}
+lang["ray-x/go.nvim"] = {
+    dependencies = {  -- optional packages
+        "ray-x/guihua.lua",
+        "neovim/nvim-lspconfig",
+        "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+        require("go").setup()
+    end,
+    event = {"CmdlineEnter"},
+    ft = {"go", 'gomod'},
+    build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
 }
 return lang
