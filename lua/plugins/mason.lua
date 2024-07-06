@@ -16,6 +16,7 @@ return {
         "clangd",
         "gopls",
         "pyright",
+        "zls",
         -- add more arguments for adding more language servers
       })
     end,
