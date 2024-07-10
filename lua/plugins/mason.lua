@@ -14,7 +14,7 @@ return {
         "lua_ls",
         "rust_analyzer",
         "clangd",
-        "gopls",
+        -- "gopls",
         "pyright",
         "zls",
         -- add more arguments for adding more language servers
