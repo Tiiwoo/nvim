@@ -16,6 +16,7 @@ return {
         -- "gopls",
         "pyright",
         "zls",
+        "ts_ls",
         -- add more arguments for adding more language servers
       },
     },
