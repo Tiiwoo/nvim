@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
   -- import/override with your plugins folder
 }
