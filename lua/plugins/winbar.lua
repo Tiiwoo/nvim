@@ -35,7 +35,7 @@ return {
         -- show the path to the file relative to the working directory
         status.component.separated_path {
           path_func = status.provider.filename { modify = ":.:h" },
-          separator = " > ", -- 自定义分隔符
+          separator = "  ",
         },
         -- add the file name and icon
         status.component.file_info { -- add file_info to breadcrumbs
@@ -53,7 +53,7 @@ return {
           icon = { hl = true },
           hl = status.hl.get_attributes("winbar", true),
           prefix = true,
-          separator = " > ", -- 自定义分隔符
+          separator = "  ",
           padding = { left = 0 },
         },
       },
