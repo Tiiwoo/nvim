@@ -11,7 +11,7 @@ return {
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.zig" },
+  -- { import = "astrocommunity.pack.zig" },
   -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
   -- import/override with your plugins folder
 }
