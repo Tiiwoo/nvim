@@ -13,7 +13,7 @@ return {
         -- show the path to the file relative to the working directory
         status.component.separated_path {
           path_func = status.provider.filename { modify = ":.:h" },
-          separator = " > ", -- 自定义分隔符
+          separator = "  ",
         },
         -- add the file name and icon
         status.component.file_info {
